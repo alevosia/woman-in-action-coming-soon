@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#fcfbe9" />
+		<meta name="theme-color" content="#fcfbe9" />
+
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+			integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+			crossorigin="anonymous"
+		/>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="/css/index.css" />
+
+		<title>Woman In Action</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="logo">
+				<img src="/images/woman_in_action_logo.png" alt="woman in action" />
+			</div>
+
+			<h1 class="heading">Woman In Action</h1>
+
+			<p class="construction">Our Website Is Under Construction</p>
+
+			<div class="countdown">
+				<div class="column">
+					<span class="number days">21</span>
+					<span class="label">Days</span>
+				</div>
+				<span class="colon">:</span>
+				<div class="column">
+					<span class="number hours">10</span>
+					<span class="label">Hours</span>
+				</div>
+				<span class="colon">:</span>
+				<div class="column">
+					<span class="number minutes">24</span>
+					<span class="label">Minutes</span>
+				</div>
+				<span class="colon">:</span>
+				<div class="column">
+					<span class="number seconds">57</span>
+					<span class="label">Seconds</span>
+				</div>
+			</div>
+
+			<div class="social">
+				<a href="https://www.facebook.com/gretchenongho/" target="_blank">
+					<i class="fab fa-facebook-square icon"></i>
+				</a>
+				<a href="https://www.instagram.com/gretchenho" target="_blank">
+					<i class="fab fa-instagram icon"></i>
+				</a>
+				<a href="https://twitter.com/gretchenho" target="_blank">
+					<i class="fab fa-twitter icon"></i>
+				</a>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+		<script src="vendor/countdowntime/moment.min.js"></script>
+		<script src="vendor/countdowntime/moment-timezone.min.js"></script>
+		<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+		<script src="vendor/countdowntime/countdowntime.js"></script>
+		<script>
+			$('.countdown').countdown100({
+				/*Set Endtime here*/
+				/*Endtime must be > current time*/
+				endtimeYear: 2020,
+				endtimeMonth: 4,
+				endtimeDate: 19,
+				endtimeHours: 0,
+				endtimeMinutes: 0,
+				endtimeSeconds: 0,
+				timeZone: 'Asia/Manila'
+				// ex:  timeZone: "America/New_York"
+				//go to " http://momentjs.com/timezone/ " to get timezone
+			});
+		</script>
+	</body>
+</html>

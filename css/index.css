@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "NHL";
+  src: url("/fonts/NHL/NHL.ttf");
+}
+@font-face {
+  font-family: "Titillium";
+  src: url("/fonts/Titillium/TitilliumWeb-Regular.ttf");
+}
+@font-face {
+  font-family: "Titillium Bold";
+  src: url("/fonts/Titillium/TitilliumWeb-Bold.ttf");
+}
+body {
+  font-family: "Titillium Bold";
+  background: #fcfbe9;
+  overflow-x: hidden;
+}
+body h1 {
+  font-family: "NHL";
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.heading {
+  color: #38b4b1;
+  font-size: 80px;
+  font-weight: 400;
+  text-align: center;
+  margin: 40px 0 30px 0;
+}
+
+.construction {
+  letter-spacing: 3px;
+  word-spacing: 6px;
+  color: #13294d;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.countdown {
+  color: #13294d;
+  width: auto;
+  padding: 30px 60px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  border: 3px solid black;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.countdown .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+}
+.countdown .column .number {
+  font-size: 72px;
+  line-height: 72px;
+}
+.countdown .column .label {
+  text-transform: uppercase;
+}
+.countdown .colon {
+  font-size: 72px;
+}
+
+.social {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.social a {
+  text-decoration: none;
+  margin: 0 6px;
+  padding: 3px;
+}
+.social .icon {
+  color: #e5311f;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 32px;
+  }
+
+  .construction {
+    letter-spacing: 2px;
+    word-spacing: 0;
+    font-size: 20px;
+  }
+
+  .countdown {
+    max-width: 340px;
+    padding: 15px;
+  }
+  .countdown .column {
+    margin: 0 15px;
+  }
+  .countdown .colon:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .wrapper {
+    padding: 20px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .heading {
+    font-size: 26px;
+    margin: 15px 0;
+  }
+
+  .construction {
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+
+  .countdown {
+    max-width: 255px;
+    padding: 10px;
+  }
+  .countdown .column {
+    margin: 0 10px;
+  }
+  .countdown .column .number {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .countdown .colon {
+    font-size: 48px;
+  }
+  .countdown .colon:nth-child(4) {
+    display: none;
+  }
+
+  .social {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
